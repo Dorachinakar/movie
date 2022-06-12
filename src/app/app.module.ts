@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MovieComponent } from './movie/movie.component';
 import { MoviesComponent } from './movies/movies.component';
@@ -25,7 +25,7 @@ import { IsnewPipe } from './pipe/isnew.pipe';
   ],
   imports: [
     BrowserModule,NbInputModule,NbCardModule,NbButtonModule,
-    BrowserAnimationsModule,NbListModule,NbCardModule,
+    BrowserAnimationsModule,NbListModule,NbCardModule,FormsModule,
     NbThemeModule.forRoot({ name: 'dark' }),
     NbLayoutModule,
     NbEvaIconsModule,

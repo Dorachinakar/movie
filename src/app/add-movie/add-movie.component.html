@@ -1,7 +1,8 @@
-<input nbInput #movie type="text" placeholder="movie name">
-<input nbInput #actors type="text" placeholder="actors">
-<input nbInput #date type="date" placeholder="date">
-<input nbInput #rank type="number" placeholder="rank">
-<input nbInput  #isNew type="checkbox" placeholder="isNew">
+<input nbInput [(ngModel)]="movie" type="text" placeholder="movie name">
+<input nbInput [(ngModel)]="actors" type="text" placeholder="actors">
+<input nbInput [(ngModel)]="date" type="date" placeholder="date">
+<input nbInput [(ngModel)]="rank" type="tel" placeholder="rank">
+<input nbInput  [(ngModel)]="isNew" type="checkbox" placeholder="isNew">
 
-<button nbButton (click)="insertMovie(movie,actors,date,rank,isNew)">insert a fucking movie </button>
+<!-- <button nbButton (click)="insertMovie(movie,actors,date,rank,isNew)">insert a fucking movie </button> -->
+<button nbButton (click)="insertMovie()">insert a fucking movie </button>

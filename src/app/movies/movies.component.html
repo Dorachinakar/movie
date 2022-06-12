@@ -1,4 +1,4 @@
 <app-add-movie></app-add-movie>
-<input type="text" placeholder="search by name" #src >
-<input type="checkbox" #isnew  >isnew?
+<input nbInput type="text" placeholder="search by name" #src >
+<input class="cheack" nbInput type="checkbox" #isnew  >isnew?
 <app-movie *ngFor="let movie of movies | movieFilterByName:src.value | isnewfilter:isnew.checked" [movie]="movie"></app-movie>

@@ -9,6 +9,7 @@ export class MoviePipe implements PipeTransform {
   transform(movies:Movie[],  src:string): Movie[]{
     if (!src) return movies
      return movies.filter(movie=>movie.name.includes(src))
+   
   }
   }
 

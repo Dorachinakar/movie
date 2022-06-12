@@ -7,7 +7,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class IsnewPipe implements PipeTransform {
 
   transform(movies: Movie[], isnew: boolean): Movie[] | undefined {
-    if(!isnew) return movies
+    if(!isnew)  return movies
     return movies.filter(movie=>movie.isNew == true)
   }
 
