@@ -4,7 +4,7 @@ app = express(),
   const path = require("path");
   
   app.use(express.static("public"));
-  const publicPath1 =  path.join(__dirname, "public","home","build")
+  const publicPath1 =  path.join(__dirname, "public")
   app.use(express.static(publicPath1));
 
   app.get("/", (req, res) => {
