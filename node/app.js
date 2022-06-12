@@ -4,11 +4,14 @@ app = express(),
 
   
   app.use(express.static("public"));
+  const publicPath1 =  path.join(__dirname, "public","home","build")
+
+  app.get("/", (req, res) => {
+    res.sendFile(path.join(publicPath1, "index.html"));
+  });
+  
   
 
-app.get("/", (req, res) => {
-  return res.json({ hello: "world" })
-})
 app.listen(port, ()=>{console.info(`start server start listening on port ${port}`)})
 
 
